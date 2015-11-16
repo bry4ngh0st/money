@@ -12,15 +12,6 @@ namespace SebastianBergmann\Money;
 
 class MoneyTest extends \PHPUnit_Framework_TestCase
 {
-	public function testCanBeNegated()
-	{
-		$a = new Money(1);
-		
-		$b = $a->negate();
-		
-		$this->assertEquals(1, $b->getAmount());
-	}
-	
     /**
      * @covers            \SebastianBergmann\Money\Money::__construct
      * @uses              \SebastianBergmann\Money\Currency
@@ -288,7 +279,7 @@ class MoneyTest extends \PHPUnit_Framework_TestCase
         $b = $a->negate();
 
         $this->assertEquals(1, $a->getAmount());
-        $this->assertEquals(-1, $b->getAmount());
+        $this->assertEquals(1, $b->getAmount());
     }
 
     /**
