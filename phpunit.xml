@@ -1,8 +1,7 @@
 <phpunit bootstrap="src/autoload.php">
   <testsuites>
     <testsuite name="money">
-      <file>tests/MoneyTest.php</file>
-      <file>tests/CurrencyTest.php</file>
+      <directory>tests</directory>
     </testsuite>
   </testsuites>
 </phpunit>
